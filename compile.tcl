@@ -46,7 +46,7 @@ synth_ip [get_ips]
 close_project
 
 #Create the project
-create_project -part xc7a35ticsg324-1l -in_memory 
+create_project -part xc7a100ticsg324-1l -in_memory 
 
 #Read the sources
 read_ip -verbose ${::ip_build_dir}/vio_0/vio_0.xci
