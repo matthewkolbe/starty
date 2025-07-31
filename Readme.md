@@ -1,4 +1,4 @@
-Fork of Adam Walker's [starty](https://github.com/adamwalker/starty)
+Fork of Adam Walker's [starty](https://github.com/adamwalker/starty). His project targeted the Arty A7 35T board. This one targets the 100T version.
 
 # Arty starter project template
 
