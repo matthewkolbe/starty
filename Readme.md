@@ -1,3 +1,5 @@
+Fork of Adam Walker's [starty](https://github.com/adamwalker/starty)
+
 # Arty starter project template
 
 A project template for the [Arty FPGA development board](https://store.digilentinc.com/arty-a7-artix-7-fpga-development-board-for-makers-and-hobbyists/).
@@ -6,7 +8,7 @@ Uses Vivado "non-project" mode. This means it is built entirely from the command
 
 Building is as easy as:
 ```
-$ vivado -mode batch -nojournal -source compile.tcl
+$ ./build.sh
 ```
 Once that completes, the bitstream and DCPs can be found in the "outputs" directory.
 
@@ -33,13 +35,10 @@ The signals from the Ethernet phy RX side are captured by chipscope and the pack
 See the `basic-ethernet` branch for a cut down version. 
 
 ## Software
-The "software" directory contains an application to test the Ethernet loopback. Build and run with:
+The "software" directory contains an application to test the Ethernet loopback.
+
+Edit the `software/build.sh` file to reflect your network interface, then run:
 ```
-$ make
-$ sudo ./loopback <interface>
+$ cd software
+$ ./build.sh
 ```
-
-## See also
-
-https://github.com/ZipCPU/openarty
-
