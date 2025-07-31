@@ -15,7 +15,7 @@
 
   <XADC_En>Enabled</XADC_En>
 
-  <TargetFPGA>xc7a35ti-csg324/-1L</TargetFPGA>
+  <TargetFPGA>xc7a100ti-csg324/-1L</TargetFPGA>
 
   <Version>4.2</Version>
 

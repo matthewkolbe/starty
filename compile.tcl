@@ -10,7 +10,7 @@ set ::ip_build_dir "./ip/build"
 file mkdir $::ip_build_dir
 
 #Generate the VIO IP
-create_project ip_project -in_memory -part xc7a35ticsg324-1L -ip
+create_project ip_project -in_memory -part xc7a100ticsg324-1L -ip
 create_ip -name vio -vendor xilinx.com -library ip -version 3.0 -module_name vio_0 -dir ${::ip_build_dir} -force
 
 set_property -dict \
@@ -33,7 +33,7 @@ generate_target all [get_files  vio_0.xci]
 
 close_project
 
-create_project ip_project -in_memory -part xc7a35ticsg324-1L -ip
+create_project ip_project -in_memory -part xc7a100ticsg324-1L -ip
 
 create_ip -name mig_7series -vendor xilinx.com -library ip -version 4.2 -module_name mig_7series_0 -dir ${::ip_build_dir} -force
 
